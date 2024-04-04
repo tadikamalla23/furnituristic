@@ -1,0 +1,35 @@
+/* NavBar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(219, 237, 186);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+  }
+  
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #007bff;
+  }
+  
+  
+  .logoname{
+    color: #3f5941;
+    font-family: 'ITC Bauhaus Light';
+  }

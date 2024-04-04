@@ -1,3 +1,6 @@
+import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import Header from './Components/Header/Header';
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Products from "./Components/Products/Products";
@@ -5,10 +8,10 @@ import ProductDetails from "./Components/Products/ProductDetails";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Divider from "./Components/Divider/Divider";
-import Sofaimg from "./Components/Images/sofaimg.png";
-import Chair from "./Components/Images/chairimg.png";
-import Table from "./Components/Images/officetableimg.png";
-import Dresser from "./Components/Images/dresserimg.png";
+import Sofaimg from "./Assests/Images/sofaimg.png";
+import Chair from "./Assests/Images/chairimg.png";
+import Table from "./Assests/Images/officetableimg.png";
+import Dresser from "./Assests/Images/dresserimg.png";
 const App = () => {
   const [productsList, setProductsList] = useState([
     {
@@ -39,6 +42,9 @@ const App = () => {
 
   return (
     <div className="App">
+      <Navbar /> <br />
+      <Header />
+
       <Routes>
         <Route
           path="/"
