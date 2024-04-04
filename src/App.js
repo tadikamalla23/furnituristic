@@ -7,8 +7,8 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import Divider from "./Components/Divider/Divider";
 import Sofaimg from "./Components/Images/sofaimg.png";
 import Chair from "./Components/Images/chairimg.png";
-import Dresser from "./Components/Images/dresserimg.png";
 import Table from "./Components/Images/officetableimg.png";
+import Dresser from "./Components/Images/dresserimg.png";
 const App = () => {
   const [productsList, setProductsList] = useState([
     {
