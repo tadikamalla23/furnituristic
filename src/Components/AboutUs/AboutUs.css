@@ -1,0 +1,25 @@
+.about-us {
+    text-align: center;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #333; /* Change this color to match your design */
+  }
+  
+  footer p {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    background-color: #5d8e66;
+  }
+  

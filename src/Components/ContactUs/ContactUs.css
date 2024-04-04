@@ -1,0 +1,28 @@
+.div1 {
+    display: block;
+    padding: 8px;
+    background-color: rgb(81, 188, 250);
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .form1 {
+    background-color: rgb(251, 247, 247);
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .form1 .btn{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #3f5941, #7aa53f);
+    text-decoration: none;
+    padding: 10px 5px;
+    border: none;
+  }
+
+  .contactus{
+    text-align: center;
+  }
