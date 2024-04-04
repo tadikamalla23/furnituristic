@@ -16,7 +16,7 @@ class Products extends React.Component {
                     alt="Product"
                   />
                   <div className="card-body">
-                    <Link className="btn btn-primary stretched-link" >
+                    <Link to={`/products/${product.pid}`} className="btn btn-primary stretched-link" >
                       Shop Now
                     </Link>
                   </div>
