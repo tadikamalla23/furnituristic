@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSection.css'; // Ensure this file exists and contains the necessary styles
-import bgImage from '../Images/sofa.jpeg'; // Ensure this path correctly points to your desired background image
+import bgImage from '../Images/background-sofa.png'; // Ensure this path correctly points to your desired background image
 
 const HeroSection = () => {
   return (
