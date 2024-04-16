@@ -1,14 +1,24 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import "./Products.css";
+import Modal from '../Modal/Modal';
 
 const ProductDetails = ({ products }) => {
   const { id } = useParams();
 
   
   const product = products.find((item) => item.pid === Number(id));
+  const [showModal, setShowModal] = React.useState(false);
 
-  const PLAYCANVAS_URL = "https://playcanv.as/p/eZRjmujt/";
+  const handleShowModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  const PLAYCANVAS_URL = "https://main.d24pjkyo5l59dg.amplifyapp.com/";
   const options = { 
     modelName : product.name, 
     position: product.position,
@@ -42,12 +52,21 @@ const ProductDetails = ({ products }) => {
 
               <div className="row pb-3">
                 <div className="col-12 col-md-4 mb-3 mb-md-0">
-                <Link
+                {/* <Link
                     className="btn btn-primary btn-block"
                     to={`${PLAYCANVAS_URL}?data=${encodedstring}`}
                   >
                     AR Visual
-                  </Link>
+                  </Link> */}
+                  <button className="btn btn-primary btn-block" onClick={handleShowModal}>
+                    AR Visual
+                  </button>
+
+                  <Modal
+                    isOpen={showModal}
+                    handleClose={handleCloseModal}
+                    iframeSrc={`${PLAYCANVAS_URL}?data=${encodedstring}`}
+                  />
                 </div>
                 <div className="col-12 col-md-4 mb-3 mb-md-0">
                   <button className="btn btn-primary btn-block">
