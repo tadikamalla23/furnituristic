@@ -1,0 +1,74 @@
+[
+  {
+    "pid": 1,
+    "name": "Sofa2",
+    "title": "Sofa",
+    "subtitle": "Modern fabric loveseat sofa.",
+    "price": 129.99,
+    "category": "Sofa2",
+    "colors": [
+      { "name": "Bazaar", "hex": "#98777B" },
+      { "name": "Beau Blue", "hex": "#BCD4E6" },
+      { "name": "Beaver", "hex": "#9F8170" },
+      { "name": "Begonia", "hex": "#FA6E79" },
+      { "name": "Beige", "hex": "#F5F5DC" }
+    ],
+    "position": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "scale": { "x": 0.05, "y": 0.05, "z": 0.05 }
+  },
+  {
+    "pid": 2,
+    "name": "Armchair1",
+    "title": "Armchair",
+    "subtitle": "Mid century accent chair.",
+    "price": 67.99,
+    "category": "Armchair1",
+    "colors": [
+      { "name": "Bazaar", "hex": "#98777B" },
+      { "name": "Beau Blue", "hex": "#BCD4E6" },
+      { "name": "Beaver", "hex": "#9F8170" },
+      { "name": "Begonia", "hex": "#FA6E79" },
+      { "name": "Beige", "hex": "#F5F5DC" }
+    ],
+    "position": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "scale": { "x": 0.05, "y": 0.05, "z": 0.05 }
+  },
+  {
+    "pid": 3,
+    "name": "SideTable",
+    "title": "SideTable",
+    "subtitle": "Aestetic SideTable.",
+    "price": 49.99,
+    "category": "SideTable",
+    "colors": [
+      { "name": "Bazaar", "hex": "#98777B" },
+      { "name": "Beau Blue", "hex": "#BCD4E6" },
+      { "name": "Beaver", "hex": "#9F8170" },
+      { "name": "Begonia", "hex": "#FA6E79" },
+      { "name": "Beige", "hex": "#F5F5DC" }
+    ],
+    "position": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "scale": { "x": 0.005, "y": 0.005, "z": 0.005 }
+  },
+  {
+    "pid": 4,
+    "name": "Drawer",
+    "title": "Drawer",
+    "subtitle": "Aestetic Wooden Drawer.",
+    "price": 259.99,
+    "category": "Drawer",
+    "colors": [
+      { "name": "Bazaar", "hex": "#98777B" },
+      { "name": "Beau Blue", "hex": "#BCD4E6" },
+      { "name": "Beaver", "hex": "#9F8170" },
+      { "name": "Begonia", "hex": "#FA6E79" },
+      { "name": "Beige", "hex": "#F5F5DC" }
+    ],
+    "position": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "scale": { "x": 0.05, "y": 0.05, "z": 0.05 }
+  }
+]
