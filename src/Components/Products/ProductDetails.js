@@ -19,6 +19,8 @@ const ProductDetails = ({ products }) => {
   };
 
   const PLAYCANVAS_URL = "https://main.d24pjkyo5l59dg.amplifyapp.com/";
+  // const PLAYCANVAS_URL = "https://playcanv.as/e/p/eZRjmujt/";
+
   const options = { 
     modelName : product.name, 
     position: product.position,
@@ -52,15 +54,15 @@ const ProductDetails = ({ products }) => {
 
               <div className="row pb-3">
                 <div className="col-12 col-md-4 mb-3 mb-md-0">
-                {/* <Link
+                <Link
                     className="btn btn-primary btn-block"
                     to={`${PLAYCANVAS_URL}?data=${encodedstring}`}
                   >
                     AR Visual
-                  </Link> */}
-                  <button className="btn btn-primary btn-block" onClick={handleShowModal}>
+                  </Link>
+                  {/* <button className="btn btn-primary btn-block" onClick={handleShowModal}>
                     AR Visual
-                  </button>
+                  </button> */}
 
                   <Modal
                     isOpen={showModal}
