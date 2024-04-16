@@ -3,10 +3,20 @@ import { useParams, Link } from "react-router-dom";
 import "./Products.css";
 
 const ProductDetails = ({ products }) => {
-  const { id } = useParams(); // Get the product ID from the URL
+  const { id } = useParams();
 
-  // Find the product with the matching ID
-  const product = products.find((item) => item.pid === id);
+  
+  const product = products.find((item) => item.pid === Number(id));
+
+  const PLAYCANVAS_URL = "https://playcanv.as/p/eZRjmujt/";
+  const options = { 
+    modelName : product.name, 
+    position: product.position,
+    rotation: product.rotation,
+    scale: product.scale, 
+    colors: product.colors
+  }
+  const encodedstring = encodeURIComponent(JSON.stringify(options));
 
   if (!product) {
     return <div>Product not found</div>;
@@ -28,21 +38,23 @@ const ProductDetails = ({ products }) => {
             <div className="card-body">
               <h5 className="card-title">{product.title}</h5>
               <p className="card-text">{product.subtitle}</p>
+              <p className="card-text">$ {product.price}</p>
 
               <div className="row pb-3">
-                <div className="col-4">
-                  <button className="btn btn-primary btn-block">
+                <div className="col-12 col-md-4 mb-3 mb-md-0">
+                <Link
+                    className="btn btn-primary btn-block"
+                    to={`${PLAYCANVAS_URL}?data=${encodedstring}`}
+                  >
                     AR Visual
-                  </button>
+                  </Link>
                 </div>
-              {/* </div>
-              <div className="row"> */}
-                <div className="col-4">
+                <div className="col-12 col-md-4 mb-3 mb-md-0">
                   <button className="btn btn-primary btn-block">
                     Add to Cart
                   </button>
                 </div>
-                <div className="col-4">
+                <div className="col-12 col-md-4 mb-3 mb-md-0">
                   <Link to="/products" className="btn btn-secondary btn-block">
                     Back to Products
                   </Link>

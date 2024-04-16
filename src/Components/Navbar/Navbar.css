@@ -1,35 +1,72 @@
-/* NavBar.css */
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgb(219, 237, 186);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-logo {
-    font-size: 24px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(219, 237, 186);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-logo {
+  flex-grow: 1;
+  font-size: 24px;
+}
+
+.navbar-links {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #3f5941;
+  padding: 8px 16px;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links.open {
     display: flex;
   }
-  
-  .navbar-links a {
-    text-decoration: none;
-    color: #333;
-    padding: 8px 16px;
-    transition: color 0.3s;
+
+  .menu-icon {
+    display: block;
   }
-  
-  .navbar-links a:hover {
-    color: #007bff;
-  }
-  
-  
-  .logoname{
-    color: #3f5941;
-    font-family: 'ITC Bauhaus Light';
-  }
+}
+
+.logoname {
+  color: #3f5941;
+  font-family: 'ITC Bauhaus Light';
+}
+
+.logoname:visited,
+.logoname:hover,
+.logoname:active,
+.logoname:focus {
+  color: #3f5941;
+  /* Keeps the color consistent on all states */
+  text-decoration: none;
+  /* Ensures no underline appears on hover */
+}
