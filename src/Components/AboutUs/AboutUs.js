@@ -6,6 +6,8 @@ const AboutUs = () => {
   return (
     <div className="about-us" id='aboutUs'>
       <h2>About Us</h2>
+      <p>"Welcome to Furnituristic, where you can experience new furniture shopping through immersive AR technology. 
+        Step into the future of real life design, right in your own space."</p>
       <p>Connect with us on social media:</p>
       <ul className="social-links">
         <li>

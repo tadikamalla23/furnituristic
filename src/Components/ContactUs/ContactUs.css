@@ -26,3 +26,7 @@
   .contactus{
     text-align: center;
   }
+
+  .required {
+    color: red;
+  }
