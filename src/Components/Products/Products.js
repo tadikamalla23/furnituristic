@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Dropdown, DropdownButton } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+
 import './Products.css'
 
 class Products extends React.Component {
   state = {
-    sortBy: '', // Initially no sorting
+    sortBy: '', //sorting for Price 
   };
 
   handleSortItems = (sort) => {
