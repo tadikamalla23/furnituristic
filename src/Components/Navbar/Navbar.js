@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
 import { Link, useLocation} from 'react-router-dom';
+import React, { useState } from 'react';
+
+
 import './Navbar.css';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -10,6 +13,8 @@ const Navbar = () => {
     } 
     return '/products'; 
   };
+
+  //rendering navbar
   return (<>
    <nav className="navbar">
       <div className="navbar-logo">
