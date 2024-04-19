@@ -1,7 +1,9 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import "./Products.css";
+
 import Modal from '../Modal/Modal';
+
+import "./Products.css";
 
 const ProductDetails = ({ products }) => {
   const { id } = useParams();
@@ -19,7 +21,7 @@ const ProductDetails = ({ products }) => {
   };
 
   const PLAYCANVAS_URL = "https://main.d24pjkyo5l59dg.amplifyapp.com/";
-  // const PLAYCANVAS_URL = "https://playcanv.as/e/p/eZRjmujt/";
+  
 
   const options = { 
     modelName : product.name, 
@@ -56,13 +58,10 @@ const ProductDetails = ({ products }) => {
                 <div className="col-12 col-md-4 mb-3 mb-md-0">
                 <Link
                     className="btn btn-primary btn-block"
-                    to={`${PLAYCANVAS_URL}?data=${encodedstring}`}
+                    to={`${PLAYCANVAS_URL}?data=${encodedstring}`}  //connecting to playcanvas
                   >
                     AR Visual
                   </Link>
-                  {/* <button className="btn btn-primary btn-block" onClick={handleShowModal}>
-                    AR Visual
-                  </button> */}
 
                   <Modal
                     isOpen={showModal}
