@@ -21,7 +21,11 @@ Users can alter a 3D model in the PlayCanvas app by specifying characteristics s
 3. Changing the model's orientation, rotation, and scale.
 4. Changing the model's appearance with different colors and textures.
 
-The PlayCanvas application's source is accessible at the FurnituRistic PlayCanvas project page.
+## PlayCanvas Project
+
+The PlayCanvas source project is available here:
+https://playcanvas.com/project/1208412/overview/furnituristic
+
 
 **Assets**
 
@@ -47,7 +51,13 @@ For more details about deployment you can check the official documents.
 
 **Deployment Information**
 
-The app is set up for deployment on an AWS amplify instance.
+The Frontend is deployed in **Vercel**
+
+
+**LiveDemo:**
+
+https://furnituristic-dyhkwxzqa-tadikamalla23s-projects.vercel.app/
+
 
 
 
