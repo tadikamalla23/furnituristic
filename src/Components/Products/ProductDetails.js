@@ -20,7 +20,10 @@ const ProductDetails = ({ products }) => {
     setShowModal(false);
   };
 
-  const PLAYCANVAS_URL = "https://main.d24pjkyo5l59dg.amplifyapp.com/";
+  // const PLAYCANVAS_URL = "https://main.d24pjkyo5l59dg.amplifyapp.com/";
+// const PLAYCANVAS_ORIGIN = "https://playcanv.as";
+const PLAYCANVAS_URL = "https://playcanv.as/e/p/eZRjmujt/";
+
   
 
   const options = { 
