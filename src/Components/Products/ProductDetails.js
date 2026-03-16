@@ -12,9 +12,9 @@ const ProductDetails = ({ products }) => {
   const product = products.find((item) => item.pid === Number(id));
   const [showModal, setShowModal] = React.useState(false);
 
-  const handleShowModal = () => {
-    setShowModal(true);
-  };
+  // const handleShowModal = () => {
+  //   setShowModal(true);
+  // };
 
   const handleCloseModal = () => {
     setShowModal(false);
