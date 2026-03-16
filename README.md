@@ -56,7 +56,7 @@ The Frontend is deployed in **Vercel**
 
 **LiveDemo:**
 
-https://furnituristic-fp0lqb5m7-tadikamalla23s-projects.vercel.app/
+https://furnituristic.vercel.app/
 
 
 
